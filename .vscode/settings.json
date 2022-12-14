@@ -1,0 +1,15 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#f5c280",
+    "activityBar.background": "#f5c280",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#0c9458",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "sash.hoverBorder": "#f5c280",
+    "tab.activeBorder": "#f5c280"
+  },
+  "peacock.color": "#f1ab51",
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}
