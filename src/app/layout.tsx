@@ -23,11 +23,11 @@ export default async function RootLayout({
       lang='en'
       className='h-full bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100'>
       <head />
-      <body className='h-full '>
+      <body className='h-full w-full flex flex-col justify-between'>
         <SupabaseListener accessToken={session?.access_token} />
         <Header />
-        <main className='px-4 lg:px-6 py-2.5 '>
-          <div className='flex flex-wrap justify-between items-center mx-auto max-w-screen-xl'>
+        <main className='px-4 lg:px-6 py-8  flex-grow'>
+          <div className='flex flex-wrap justify-between items-center max-w-screen-xl'>
             {children}
           </div>
         </main>
