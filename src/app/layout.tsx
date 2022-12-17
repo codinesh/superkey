@@ -26,7 +26,7 @@ export default async function RootLayout({
       <body className='h-full w-full flex flex-col justify-between'>
         <SupabaseListener accessToken={session?.access_token} />
         <Header />
-        <main className='px-4 lg:px-6 py-8  flex-grow'>
+        <main className='px-4 lg:px-6 py-8 flex-grow '>
           <div className='flex flex-wrap justify-between items-center max-w-screen-xl'>
             {children}
           </div>
