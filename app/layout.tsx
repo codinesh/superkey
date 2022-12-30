@@ -1,8 +1,8 @@
 import 'server-only'
-import Footer from '../components/Footer'
-import SupabaseListener from '../components/SupabaseListener'
 import '../globals.css'
-import createClient from '../utils/supabase-server'
+import Footer from '../src/components/Footer'
+import SupabaseListener from '../src/supabase/listener'
+import createClient from '../src/supabase/server'
 import Header from './Header'
 
 export const revalidate = 0
@@ -21,13 +21,13 @@ export default async function RootLayout({
   return (
     <html
       lang='en'
-      className='h-full bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100'>
+      className='h-full text-gray-800 bg-gray-100 dark:bg-gray-800 dark:text-gray-100'>
       <head />
-      <body className='h-full w-full flex flex-col justify-between'>
+      <body className='flex flex-col justify-between w-full h-full'>
         <SupabaseListener accessToken={session?.access_token} />
         <Header />
-        <main className='px-4 lg:px-6 py-8 flex-grow '>
-          <div className='flex flex-wrap justify-between items-center max-w-screen-xl'>
+        <main className='flex-grow px-4 py-8 lg:px-6 '>
+          <div className='flex flex-wrap items-center justify-between max-w-screen-xl'>
             {children}
           </div>
         </main>

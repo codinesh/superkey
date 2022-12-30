@@ -1,6 +1,6 @@
 'use client'
 
-import supabase from '../utils/supabase-browser'
+import supabase from '../supabase/browser'
 
 const Signout = () => {
   const handleLogout = async () => {

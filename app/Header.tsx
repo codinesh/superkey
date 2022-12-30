@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Signin from '../components/Signin'
-import Signout from '../components/Signout'
-import useClient from '../utils/supabase-server'
+import Signin from '../src/components/Signin'
+import Signout from '../src/components/Signout'
+import useClient from '../src/supabase/server'
 
 const Header = async () => {
   const supabase = useClient()

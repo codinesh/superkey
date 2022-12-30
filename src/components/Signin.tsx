@@ -1,6 +1,6 @@
 'use client'
 
-import supabase from '../utils/supabase-browser'
+import supabase from '../supabase/browser'
 
 const Signin = () => {
   const handleLogin = async () => {
